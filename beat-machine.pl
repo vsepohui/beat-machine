@@ -75,7 +75,7 @@ sub machine {
 			my @buffer = ();
 			for my $kind (grep {$_} @kinds) {
 				my $processor = KINDS->{$kind} or die "Unsupported kind: $kind";
-				my $r = $processor->($step, $input);
+				my $r = int $processor->($step, $input) / 16;
 				push @buffer, $out_hex ? int2hex $r : $r;
 			}
 			$row{$instrument} = \@buffer;
