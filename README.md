@@ -1,3 +1,7 @@
+# Install
+
+sudo cpan install Digest::CRS
+
 # Using
 
 Using: 
