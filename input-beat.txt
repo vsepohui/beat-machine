@@ -1,0 +1,25 @@
+{
+	bpm  => 120,
+	beat => [
+		# 1
+		{K => 'punk', H => undef},
+		{},
+		{H => 'thief'},
+		{},
+		# 2
+		{S => 'punk', H => [qw/punk thief/]},
+		{},
+		{H => undef},
+		{},
+		# 3		
+		{K => 'hippie', H => 'holem'},
+		{},
+		{H => [qw/holem punk/]},
+		{},
+		# 4
+		{S => 'zen', H => 'thief'},
+		{},
+		{H => 'zen'},
+		{},
+	],
+};
