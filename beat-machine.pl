@@ -38,7 +38,8 @@ use constant KINDS => {
 	hippie => sub {
 		my ($step, $input) = @_;
 		my $bpm = $input->{bpm};
-		return int (sin ((hex2dec (md5_hex(Dumper({beat => [splice(@{$input->{beat}}, 0, $step)], bpm => $bpm}))) % 255) / $bpm) * 255);
+		my @b = @{$input->{beat}};
+		return int (sin ((hex2dec (md5_hex(Dumper({beat => [splice(@b, 0, $step)], bpm => $bpm}))) % 255) / $bpm) * 255);
 	},
 	zen    => sub {
 		my ($step, $input) = @_;
