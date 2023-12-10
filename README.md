@@ -1,4 +1,4 @@
-# Using
+# Beat machine: generator of drum delays (offsets) in pattern
 
 Using: 
 
