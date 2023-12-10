@@ -1,6 +1,8 @@
+# Beat machine: generator of drum delays (offsets) in pattern
+
 # Install
 
-sudo cpan install Digest::CRS
+sudo cpan install Digest::CRC
 
 # Using
 
